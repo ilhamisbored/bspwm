@@ -38,17 +38,6 @@ super + y
 super + g
 	bspc node -s biggest.window
 
-# Print screen 
- ​# Without the sleep scrot crashes with: 
- # giblib error: couldn't grab keyboard:Resource temporarily unavailable 
-
-Print
-    sleep 0.2; \
-    scrot -s /home/ilham/Pictures/Screenshots/%Y-%m-%d_%H%M%S-$wx$h_scrot.png
-
-ctrl + Print
-    scrot /home/Pictures/Screenshots/%Y-%m-%d_%H%M%S-$wx$h_scrot.png
-#snip screen
 #
 # state/flags
 #
@@ -131,27 +120,20 @@ super + alt + shift + {h,j,k,l}
 super + {Left,Down,Up,Right}
 	bspc node -v {-20 0,0 20,0 -20,20 0}
 
-# volume control
-XF86AudioLowerVolume
-	amixer set Master 5%-
+#audio
 XF86AudioRaiseVolume
-	amixer set Master 5%+
+	amixer set Master 2%+
+XF86AudioLowerVolume
+	amixer set Master 2%-
 XF86AudioMute
 	amixer set Master toggle
-# brightness control
-
-# brightness down
-
-XF86MonBrightnessDown
-
-xbacklight -dec 10%
-
-# brightness up
-
-XF86MonBrightnessUp
-
-xbacklight -inc 10%
 
 # lockscreen
 super + x
 	betterlockscreen -l dimblur
+
+# Screenshot
+@Print
+	scrot -s /home/ilham/Pictures/Screenshots/%Y-%m-%d_%H%M%S-$wx$h_screenshot-scrot.png
+
+
