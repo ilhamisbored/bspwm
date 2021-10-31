@@ -182,7 +182,7 @@ expand-right = true
 
 format-spacing = 1
 
-label-open = 襤
+label-open =" 襤"
 
 label-open-foreground = ${colors.secondary}
 
