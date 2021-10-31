@@ -186,7 +186,7 @@ label-open =" 襤"
 
 label-open-foreground = ${colors.secondary}
 
-label-close = Cancel
+label-close = " Cancel"
 
 label-close-foreground = ${colors.secondary}
 
