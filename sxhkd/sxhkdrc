@@ -14,12 +14,19 @@ super + @space
 super + Escape
 	pkill -USR1 -x sxhkd
 
+# another terminal
 ctrl + Return
 	xfce4-terminal
 
 #
 # bspwm hotkeys
 #
+
+super + }
+	bspc desktop --focus next
+
+super + {
+	bspc desktop --focus prev
 
 # quit/restart bspwm
 super + alt + {q,r}
