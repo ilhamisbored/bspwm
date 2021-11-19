@@ -16,7 +16,7 @@ super + Escape
 
 # another terminal
 ctrl + Return
-	xfce4-terminal
+	kitty
 
 #
 # bspwm hotkeys
