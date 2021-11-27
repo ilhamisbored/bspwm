@@ -50,9 +50,10 @@ font-0 = fixed:pixelsize=11;1
 font-1 = unifont:fontformat=truetype:size=8:antialias=false;0
 font-2 = Liga SFMono Nerd Font:style=Regular:pixelsize=11;2
 
-modules-left = powermenu bspwm
+modules-left = powermenu 
 modules-center = xwindow
-modules-right = pulseaudio battery wifi xkeyboard memory cpu wlan date 
+modules-right = pulseaudio battery wifi xkeyboard memory wlan date 
+
 
 tray-position = none 
 tray-padding = 2
@@ -62,13 +63,14 @@ cursor-scroll = ns-resize
 
 [module/xwindow]
 type = internal/xwindow
-label = %title:0:30:...%
+label = "                                                                                                          %title:0:30:...%"
 
 [module/xkeyboard]
+
 type = internal/xkeyboard
 blacklist-0 = num lock
 
-format-prefix = "   "
+format-prefix = "	  "
 format-prefix-foreground = ${colors.foreground-alt}
 format-prefix-underline = ${colors.secondary}
 
@@ -101,11 +103,11 @@ label-empty-padding = 2
 ; label-separator = |
 
 
-[module/i3]
-type = internal/i3
-format = <label-state> <label-mode>
-index-sort = true
-wrapping-scroll = false
+ [module/i3]
+ type = internal/i3
+ format = <label-state> <label-mode>
+ index-sort = true
+ wrapping-scroll = false
 
 label-mode-padding = 2
 label-mode-foreground = #000
@@ -128,13 +130,13 @@ label-urgent = %index%
 label-urgent-background = ${colors.alert}
 label-urgent-padding = 2
 
-[module/cpu]
-type = internal/cpu
-interval = 2
-format-prefix = " "
-format-prefix-foreground = ${colors.foreground-alt}
-format-underline = #f90000
-label = %percentage:2%%
+ [module/cpu]
+ type = internal/cpu
+ interval = 2
+ format-prefix = " "
+ format-prefix-foreground = ${colors.foreground-alt}
+ format-underline = #f90000
+ label = %percentage:2%%
 
 [module/battery]
 type = internal/battery
@@ -208,8 +210,8 @@ ramp-signal-foreground = ${colors.foreground-alt}
 type = internal/date
 interval = 60
 
-date = " %Y-%m-%d  | "
-date-alt = " %Y-%m-%d  | "
+date = " %Y-%m-%d	| "
+date-alt = " %Y-%m-%d	| "
 
 time = %H:%M
 time-alt = %H:%M
