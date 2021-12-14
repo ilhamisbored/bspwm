@@ -52,7 +52,7 @@ font-2 = Liga SFMono Nerd Font:style=Regular:pixelsize=11;2
 
 modules-left = powermenu 
 modules-center = xwindow
-modules-right = pulseaudio battery wifi xkeyboard memory wlan date 
+modules-right = pulseaudio battery wifi memory date 
 
 
 tray-position = none 
@@ -63,7 +63,7 @@ cursor-scroll = ns-resize
 
 [module/xwindow]
 type = internal/xwindow
-label = "                                                                                                          %title:0:30:...%"
+label = "                                                                                                     %title:0:30:...%"
 
 [module/xkeyboard]
 
