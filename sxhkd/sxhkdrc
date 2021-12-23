@@ -8,7 +8,7 @@ super + Return
 
 # program launcher
 super + @space
-	rofi -show drun
+		rofi -show drun
 
 # make sxhkd reload its configuration files:
 super + Escape
@@ -144,5 +144,8 @@ super + x
 
 # Screenshot
 @Print
-	scrot -s --line mode=edge /home/ilham/Pictures/Screenshots/%Y-%m-%d_%H%M%S-$wx$h_screenshot-scrot.png
+	scrot -s --line mode=edge ~/Pictures/Screenshots/%Y-%m-%d_%H%M%S-$wx$h_screenshot-scrot.png
 
+# Rofi screenshot
+super + @Print
+	scrot -d1 & rofi -show drun

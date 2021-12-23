@@ -29,7 +29,7 @@ width = 100%
 height = 23
 offset-x = 0%
 radius = 3.0
-fixed-center = false
+fixed-center = true
 
 background = ${colors.background}
 foreground = ${colors.foreground}
@@ -63,7 +63,7 @@ cursor-scroll = ns-resize
 
 [module/xwindow]
 type = internal/xwindow
-label = "                                                                                                     %title:0:30:...%"
+label = "%title:0:30:...%"
 
 [module/xkeyboard]
 
