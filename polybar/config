@@ -48,7 +48,7 @@ font-4 = FontAwesome5FreeRegular:pixelsize=12;1
 
 modules-left = rofi-run bspwm
 modules-center = xwindow
-modules-right = wifi pulseaudio date powermenu
+modules-right = wifi battery pulseaudio date powermenu
 enable-ipc = true
 
 wm-restack = bspwm
@@ -110,6 +110,44 @@ cursor-scroll = ns-resize
 [module/xwindow]
 type = internal/xwindow
 label = %title:0:30:...%
+
+[module/battery]
+type = internal/battery
+
+battery = BAT0
+adapter = AC
+
+format-charging = <animation-charging> <label-charging>
+format-discharging = <animation-discharging> <label-discharging>
+
+label-charging = %percentage%%
+label-discharging = %percentage%%
+
+full-at = 100
+
+label-full =    100%
+
+ramp-capacity-0 = 
+ramp-capacity-1 = 
+ramp-capacity-2 = 
+ramp-capacity-3 = 
+ramp-capacity-4 = 
+
+animation-charging-0 = 
+animation-charging-1 = 
+animation-charging-2 = 
+animation-charging-3 = 
+animation-charging-4 = 
+
+animation-charging-framerate = 750
+
+animation-discharging-0 = 
+animation-discharging-1 = 
+animation-discharging-2 = 
+animation-discharging-3 = 
+animation-discharging-4 = 
+; Framerate in milliseconds
+animation-discharging-framerate = 750
 
 [module/bspwm]
 type = internal/bspwm
