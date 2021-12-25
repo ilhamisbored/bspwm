@@ -30,6 +30,7 @@ height = 23
 offset-x = 0%
 radius = 3.0
 fixed-center = true
+wm-restack = bspwm
 
 background = ${colors.background}
 foreground = ${colors.foreground}
