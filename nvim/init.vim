@@ -13,6 +13,8 @@ Plug 'https://github.com/preservim/nerdtree' " NerdTree
 Plug 'https://github.com/shaunsingh/nord.nvim'
 Plug 'https://github.com/andweeb/presence.nvim'
 Plug 'https://github.com/ryanoasis/vim-devicons' " Developer Icons
+Plug 'kyazdani42/nvim-web-devicons'
+Plug 'romgrk/barbar.nvim'
 
 set encoding=UTF-8
 
