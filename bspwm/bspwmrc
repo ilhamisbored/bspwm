@@ -3,20 +3,16 @@
 $HOME/.config/polybar/launch.sh &
 $HOME/.WhateverINeed.sh &
 
-sxhkd 
+sxhkd & 
 
 bspc config border_width         2
-bspc config window_gap          12
+bspc config window_gap           5
 
-bspc config normal_border_color "#4C566A"
+bspc config normal_border_color "#eceff4"
 bspc config focused_border_color "#81A1C1"
 
 bspc config split_ratio          0.52
-bspc config borderless_monocle   true
-bspc config gapless_monocle      true
+bspc config borderless_monocle   false
+bspc config gapless_monocle      false
 
-bspc rule -a Spotify desktop='^3' state=floating follow=on
-bspc rule -a obs desktop='^2'
-bspc rule -a mplayer2 state=floating
-bspc rule -a Kupfer.py focus=on
-bspc rule -a Screenkey manage=off
+
