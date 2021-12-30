@@ -66,7 +66,7 @@ super + ctrl + {m,x,y,z}
 
 # focus the node in the given direction
 super + {_,shift + }{h,j,k,l}
-	bspc node -{f,s} {west,south,north,east}
+	bspc node -{f,s} {north,west,east,south}
 
 # focus the node for the given path jump
 super + {p,b,comma,period}
@@ -142,10 +142,20 @@ XF86AudioMute
 super + x
 	betterlockscreen -l dimblur
 
+# Lockscreen screenshot
+
+super + v
+	 betterlockscreen -l dimblur & scrot -d1
+
 # Screenshot
 @Print
-	scrot -s --line mode=edge ~/Pictures/Screenshots/%Y-%m-%d_%H%M%S-$wx$h_screenshot-scrot.png
+	scrot -s --line mode=edge ~/Pictures/Screenshots/%Y-%m-%d_%H%M%S-$wx$h_screenshot-scrot.jpg
 
 # Rofi screenshot
 super + @Print
 	scrot -d1 & rofi -show drun
+
+# Fullscreen screenshot
+ctrl + @Print
+	cd ~/Pictures/Screenshots && scrot -d1
+
