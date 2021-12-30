@@ -5,6 +5,7 @@
 :set smarttab
 :set softtabstop=4
 :set mouse=a
+:set wrap linebreak nolist!
 
 call plug#begin()
 
