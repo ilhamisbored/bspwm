@@ -6,6 +6,5 @@ pkill polybar
 # polybar-msg cmd quit
 
 # Launch Polybar, using default config location ~/.config/polybar/config
-polybar th1nhhdk 2>&1 | tee -a /tmp/polybar.log & disown
-
+polybar -c ~/.config/polybar/config.ini th1nhhdk
 echo "Polybar launched..."
