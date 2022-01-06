@@ -136,7 +136,7 @@ XF86AudioRaiseVolume
 XF86AudioLowerVolume
 	amixer set Master 2%-
 XF86AudioMute
-	amixer set Master toggle
+	pactl set-sink-mute {0 0,0 1}
 
 # lockscreen
 super + x
@@ -149,7 +149,7 @@ super + v
 
 # Screenshot
 @Print
-	scrot -s --line mode=edge ~/Pictures/Screenshots/%Y-%m-%d_%H%M%S-$wx$h_screenshot-scrot.jpg
+	scrot -s --line mode=edge ~/Pictures/Screenshots/%Y-%m-%d_%H%M%S-$wx$h_screenshot-scrot.png
 
 # Rofi screenshot
 super + @Print
@@ -157,5 +157,7 @@ super + @Print
 
 # Fullscreen screenshot
 ctrl + @Print
-	cd ~/Pictures/Screenshots && scrot -d1
-
+	scrot -d1 && mv *.png ~/Pictures/Screenshots/
+# Brightness
+XF86MonBrightness{Up,Down}
+	brightnessctl s 350{+,-}
