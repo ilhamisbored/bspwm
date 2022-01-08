@@ -12,6 +12,12 @@
 
 call plug#begin()
 
+
+Plug 'neoclide/coc.nvim', {'do': 'yarn install --frozen-lockfile'} " this is for auto complete, prettier and tslinting
+
+let g:coc_global_extensions = ['coc-tslint-plugin', 'coc-tsserver', 'coc-css', 'coc-html', 'coc-json', 'coc-prettier']  " list of CoC extensions needed
+
+Plug 'jiangmiao/auto-pairs' "this will auto close ( [ {
 Plug 'liuchengxu/vim-clap'
 " Build the extra binary if cargo exists on your system.
 Plug 'liuchengxu/vim-clap', { 'do': ':Clap install-binary' }
@@ -27,7 +33,6 @@ Plug 'liuchengxu/vim-clap', { 'do': has('win32') ? 'cargo build --release' : 'ma
 Plug 'glepnir/dashboard-nvim'
 Plug 'https://github.com/preservim/nerdtree' " NerdTree
 Plug 'https://github.com/shaunsingh/nord.nvim'
-Plug 'https://github.com/andweeb/presence.nvim'
 Plug 'https://github.com/ryanoasis/vim-devicons' " Developer Icons
 Plug 'kyazdani42/nvim-web-devicons'
 Plug 'romgrk/barbar.nvim'
