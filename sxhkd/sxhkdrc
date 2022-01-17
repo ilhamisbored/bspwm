@@ -18,7 +18,7 @@ super + Escape
 ctrl + Return
 	kitty
 
-#
+# 
 # bspwm hotkeys
 #
 
@@ -29,7 +29,7 @@ super + {
 	bspc desktop --focus prev
 
 # quit/restart bspwm
-super + alt + {q,r}
+super + alt + {q,r} 
 	bspc {quit,wm -r}
 
 # close and kill
@@ -138,6 +138,10 @@ XF86AudioLowerVolume
 XF86AudioMute
 	pactl set-sink-mute {0 0,0 1}
 
+# Brightness
+#
+XF86MonBrightness{Up,Down}
+	brightnessctl s 350{+,-}
 # lockscreen
 super + x
 	betterlockscreen -l dimblur
@@ -158,6 +162,3 @@ super + @Print
 # Fullscreen screenshot
 ctrl + @Print
 	scrot -d1 && mv *.png ~/Pictures/Screenshots/
-# Brightness
-XF86MonBrightness{Up,Down}
-	brightnessctl s 350{+,-}
