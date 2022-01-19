@@ -3,7 +3,7 @@ window:
     x: 16
     y: 16
   decorations: none
-  opacity: 0.9
+  opacity: 0.76
   dynamic_title: false
 scrolling:
   # Maximum number of lines in the scrollback buffer.
@@ -27,7 +27,7 @@ font:
   bold_italic:
     family: Liga SFMono Nerd Font
     style: Bold Italic
-  size: 11.5
+  size: 10.5
   offset:
     x: 1
     y: 1
