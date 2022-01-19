@@ -7,3 +7,6 @@ SF Mono Nerd Font Ligaturized
 
 Font Awesome
 (link to website: https://fontawesome.com/)
+
+# PICOM
+I used a fork of picom called picom-jonaburg. The link to the repo is https://github.com/jonaburg/picom/
