@@ -1,13 +1,11 @@
 #! /bin/sh
 
 # Start up processes
-
-$HOME/.config/polybar/launch.sh &
 sudo libvirtd -d &
 sudo virtlogd -d &
-sudo auto-cpufreq --live &
+sudo /usr/bin/auto-cpufreq --live &
 discord &
-
+$HOME/.config/polybar/launch.sh &
 pgrep -x sxhkd > /dev/null || sxhkd &
 
 # BSPWM config

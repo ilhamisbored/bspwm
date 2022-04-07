@@ -56,8 +56,8 @@ overshoot = 0
 # For alsa 'source' will be the capture device.
 # For fifo 'source' will be the path to fifo-file.
 # For shmem 'source' will be /squeezelite-AA:BB:CC:DD:EE:FF where 'AA:BB:CC:DD:EE:FF' will be squeezelite's MAC address
-; method = pulse
-; source = auto
+ ; method = pulse
+ ; source = 65584
 
 ; method = alsa
 ; source = hw:Loopback,1
@@ -135,7 +135,7 @@ gradient_color_8 = '#BF616A'
 
 # Percentage value for integral smoothing. Takes values from 0 - 100.
 # Higher values means smoother, but less precise. 0 to disable.
-integral = 50
+integral = 45
 
 # Disables or enables the so-called "Monstercat smoothing" with or without "waves". Set to 0 to disable.
 ; monstercat = 1
