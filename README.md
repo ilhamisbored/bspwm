@@ -1,5 +1,6 @@
 # BSPWM Dotfiles
-Here are my main dotfiles for my bspwm setup :)
+Here are my main dotfiles for my bspwm setup.
+Copy everything to ~/.config/
 
 # REQUIRED FONTS
 SF Mono Nerd Font Ligaturized 
